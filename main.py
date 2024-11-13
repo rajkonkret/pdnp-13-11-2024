@@ -20,3 +20,5 @@ if __name__ == '__main__':
 # (.venv) PS C:\Users\CSComarch\PycharmProjects\pdnp-13-11-2024> python.exe .\main.py
 # Hi, PyCharm
 # ctrl / komentarz automatyczny
+# PEP8
+# ctrl alt l - dostosowuje kod do zasad PEP8
