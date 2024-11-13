@@ -25,7 +25,7 @@ print(tekst[1])  # i
 
 print(tekst.count("i"))  # występuje 3 razy
 print(tekst.count("j", 0, 4))  # 0 razy bo indeksy 0123
-
+print(tekst.count("j", 0, 4))  # sam podstawia podpowiedzi
 print(tekst.removeprefix("Witaj"))  # " Świecie"
 print(tekst.removesuffix("Świecie"))  # "Witaj "
 
