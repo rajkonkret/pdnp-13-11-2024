@@ -82,3 +82,21 @@ print(lista)  # ['Radek', 'Karolina', 'Tomek', 'Adam', 'Zenek', 'Anna', 'Mikoła
 # usunięcie po indeksie
 print(lista.pop(4))  # Zenek - pokazuje kogo usunął
 print(lista)  # ['Radek', 'Karolina', 'Tomek', 'Adam', 'Anna', 'Mikołaj']
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3,3
+b = 7
+print(a, b)  # 3 7
+
+lista_2 = lista  # a = b, kopia referencji, kopia adresu w pamięci
+lista_copy = lista.copy()  # kopia elementów listy
+print(lista_2, lista)
+# ['Radek', 'Karolina', 'Tomek', 'Adam', 'Anna', 'Mikołaj'] ['Radek', 'Karolina', 'Tomek', 'Adam', 'Anna', 'Mikołaj']
+lista.clear()  # czyszczenie elementów listy
+print(lista_2, lista)  # [] []
+print(lista_copy)
+print(id(lista))  # 1361554350592
+print(id(lista_2))  # 1361554350592
+print(id(lista_copy))  # 1993276194304
