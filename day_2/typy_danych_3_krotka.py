@@ -39,3 +39,40 @@ print(len(tupla_imiona))  # 7
 
 print(tupla_imiona.index("Monika"))  # indeks numer 4
 print(tupla_imiona.count("Radek"))  # występuje 1 raz
+
+# rozpakowanie tupli
+tup = 1, 2
+print(type(tup))  # <class 'tuple'>
+
+a, b = 1, 2
+print(a, b)
+
+a, b = tup
+print(a, b)  # 1 2
+
+tup_2 = 1, 2, 3
+# a, b = tup_2  # ValueError: too many values to unpack (expected 2)
+a, *b = tup_2  # * worek na pozostałe dane
+print(a, b)  # 1 [2, 3]
+
+print(tupla_imiona)
+# ('Radek', 'Tomek', 'Marek', 'Anna', 'Monika', 'Zenek', 'Tadeusz')
+
+# name1, name2, name3
+name1, name2, *name3 = tupla_imiona
+print(name1, name2, name3)  # Radek Tomek ['Marek', 'Anna', 'Monika', 'Zenek', 'Tadeusz']
+
+name1, *name2, name3 = tupla_imiona
+print(name1, name2, name3)  # Radek ['Tomek', 'Marek', 'Anna', 'Monika', 'Zenek'] Tadeusz
+
+*name1, name2, name3 = tupla_imiona
+print(name1, name2, name3)  # ['Radek', 'Tomek', 'Marek', 'Anna', 'Monika'] Zenek Tadeusz
+
+name1 = tupla_imiona[0:2]  # ('Radek', 'Tomek')
+print(name1)
+
+name2 = tupla_imiona[2:4]
+print(name2)  # ('Marek', 'Anna')
+
+name3 = tupla_imiona[4:6]
+print(name3)  # ('Monika', 'Zenek')
