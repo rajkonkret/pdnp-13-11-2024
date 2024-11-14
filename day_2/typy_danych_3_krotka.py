@@ -81,3 +81,11 @@ name3 = tupla_imiona[4:]
 print(name3)  # ('Monika', 'Zenek', 'Tadeusz')
 
 print(name1, name2, name3)  # ('Radek', 'Tomek') ('Marek', 'Anna') ('Monika', 'Zenek', 'Tadeusz')
+
+lista = list(tupla_imiona)
+print(lista)  # ['Radek', 'Tomek', 'Marek', 'Anna', 'Monika', 'Zenek', 'Tadeusz']
+print(type(lista))  # <class 'list'>
+
+# sortowanie krotki stworzy liste
+print(sorted(tupla_imiona))  # ['Anna', 'Marek', 'Monika', 'Radek', 'Tadeusz', 'Tomek', 'Zenek']
+print(tupla_imiona)  # ('Radek', 'Tomek', 'Marek', 'Anna', 'Monika', 'Zenek', 'Tadeusz')
