@@ -35,3 +35,36 @@ print(id(zbior))
 # {66, 777, 11, 44, 18, 22, 24}
 # 2452820267232
 # 2452819957280
+# ctrl / - komentarz
+
+zbior_2 = {667, 11, 44, 18, 52, 62, 999, 999, 12.34}
+print(zbior_2)  # {999, 11, 44, 12.34, 18, 52, 667, 62}
+
+# suma zbiorów - zwraca nowy zbiór
+print(zbior | zbior_2)  # {66, 999, 777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+print(zbior.union(zbior_2))  # {66, 999, 777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+print(zbior)  # {66, 777, 11, 44, 18, 22, 24}
+
+# część wspólna - zwraca nowy zbiór
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# róznica
+print(zbior - zbior_2)  # {24, 777, 66, 22}
+print(zbior.difference(zbior_2))  # {24, 777, 66, 22}
+print(zbior_2.intersection(zbior))  # {18, 11, 44}
+
+# łączy zbiory w jeden, nadpisuje bazowy!!!
+zbior.update(zbior_2)
+print(zbior)  # {66, 999, 777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62}
+
+krotka = tuple(zbior)
+print(krotka)  # (66, 999, 777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62)
+print(type(krotka))  # <class 'tuple'>
+
+lista = list(zbior)
+print(lista)  # [66, 999, 777, 11, 44, 12.34, 18, 52, 22, 24, 667, 62]
+print(type(lista))  # <class 'list'>
+
+# sprawdzenie czy element istnieje w kolekcji
+print(999 in zbior_2)  # True

@@ -119,3 +119,4 @@ spam %= 1    spam = spam % 1
 
 https://www.w3schools.com/python/default.asp
 https://pl.altapps.net/soft/hackerrank-com
+https://www.matmana6.pl/dzialania-na-zbiorach
