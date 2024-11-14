@@ -54,7 +54,7 @@ print("Nowa linia")
 # Nowa linia
 
 pol_ang = {'kot': 'cat', 'pies': 'dog', "dach": "roof"}
-ang_pol = {}  # zamienic klucze z wartoścciami
+ang_pol = {}  # zamienic klucze z wartościami
 for k, v in pol_ang.items():
     ang_pol[v] = k
 
