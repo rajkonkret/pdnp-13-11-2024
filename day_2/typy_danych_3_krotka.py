@@ -76,3 +76,6 @@ print(name2)  # ('Marek', 'Anna')
 
 name3 = tupla_imiona[4:6]
 print(name3)  # ('Monika', 'Zenek')
+
+name3 = tupla_imiona[4:]
+print(name3)  # ('Monika', 'Zenek', 'Tadeusz')
