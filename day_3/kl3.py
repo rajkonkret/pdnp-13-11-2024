@@ -13,6 +13,7 @@ class Kura(Ptak):  # dziedziczy po klasie Ptak
     klasa Kura
     """
 
+    # musimy wywołąć konstruktor klasy nadrzędnej czyli super()
     def __init__(self, gatunek):
         super().__init__(gatunek, 0)
 
